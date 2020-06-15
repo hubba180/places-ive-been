@@ -21,14 +21,6 @@ _This site was used to practive object oriented programming concepts by building
           Time of year: Fall,
           Number of days at Location: 10,
 
-**Behavior**
-* Input: 
-* Output:
-
-**Behavior**
-* Input: 
-* Output:
-
 ## Setup/Installation Requirements
 
 #### Requirements
