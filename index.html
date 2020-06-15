@@ -10,8 +10,43 @@
   <title>Document</title>
 </head>
 <body>
-
-
+  <div class="container">
+    <div id="previousPlaceList">
+      <ul>
+        <li id="rome">Rome</li>
+        <li id="hoodRiver">Hood River</li>
+        <li id="mtEverest">Mt. Everest</li>
+      </ul>
+    </div>
+    <form id="input">
+      <label for="name">Name of place:</label>
+      <input type="text" id="name" class="form-control">
+      <label for="country">Name of country:</label>
+      <input type="text" id="country" class="form-control">
+      <label for="timeOfYear">Time of year:</label>
+      <input type="text" id="timeOfYear" class="form-control">
+      <label for="daysAt">Days at place:</label>
+      <input type="text" id="daysAt" class="form-control">
+      <br>
+      <button type="submit" class="btn">Creat a place</button>
+    </form>
+  </div>
+  <div id="display">
+    <p>Location: <span id="namePlace"></span></p>
+    <ul>
+      <li><span id="countryPlace"></span></li>
+      <li><span id="timeOfYearPlace"></span></li>
+      <li><span id="daysAtPlace"></span></li>
+    </ul>
+  </div>
+  <div id="previousPlaceDisplay">
+    <p>Location: <span id="previousName"></span></p>
+    <ul>
+      <li><span id="previousCountry"></span></li>
+      <li><span id="previousTimeOfYear"></span></li>
+      <li><span id="previousDaysAt"></span></li>
+    </ul>
+  </div>
   
 </body>
 </html>

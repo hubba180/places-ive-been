@@ -39,15 +39,52 @@ Location.prototype.placeDetails = function() {
 return this.name + " " + this.country + "" + this.timeOfYear + "" + this.daysAt;
 }
 
+let Rome = new Location("Rome", "Italy", "Fall", 14);
+let HoodRiver = new Location("Hood River", "United States", "Summer", 104);
+let MtEverest = new Location("Mt. Everest", "Nepal", "Summer", 18);
+
 // User Interface Logic 
 
 $(document).ready(function() {
-$("form#new-place").submit(function() {
-  event.preventDefault();
-  let inputName = $("input#new-name").val();
+  $("form#input").submit(function() {
+    event.preventDefault();
+    let name = $("#name").val();
+    let country = $("#country").val();
+    let timeOfYear = $("#timeOfYear").val();
+    let daysAt = $("#daysAt").val();
+    let newPlace = new Location(name, country, timeOfYear, daysAt);
 
+    $("#display").show();
+    $("#namePlace").text(newPlace.name);
+    $("#countryPlace").text(newPlace.country);
+    $("#timeOfYearPlace").text(newPlace.timeOfYear);
+    $("#daysAtPlace").text(newPlace.daysAt);
+  });
 
-})
+  $("#rome").click(function() {
+    event.preventDefault();
+    $("#previousPlaceDisplay").show();
+    show(Rome);
+  });
 
+  $("#hoodRiver").click(function() {
+    event.preventDefault();
+    $("#previousPlaceDisplay").show();
+    show(HoodRiver);
+  });
 
-})
+  $("#mtEverest").click(function() {
+    event.preventDefault();
+    $("#previousPlaceDisplay").show();
+    show(MtEverest);
+  });
+
+  function show(object) {
+    $("#previousName").text(object.name);
+    $("#previousCountry").text(object.country);
+    $("#previousTimeOfYear").text(object.timeOfYear);
+    $("#previousDaysAt").text(object.daysAt);
+
+  };
+
+});
