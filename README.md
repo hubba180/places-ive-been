@@ -6,13 +6,20 @@ _This site was used to practive object oriented programming concepts by building
 
 ## Specifications
 
-**Behavior** Display places name.
-* Input: click
-* Output: display property
+**Behavior** Display places name that once clicked will display relative information.
+* Input: click Rome 
+* Output:  
+          Location: Rome,
+          Country: Italy,
+          Time of year: Fall,
+          Number of days at Location: 14,
 
-**Behavior**
-* Input: 
-* Output:
+**Behavior** Display has an input for a new location and once submitted will display those details
+* Input: Astoria, USA, Fall, 10
+* Output: Location: Astoria,
+          Country: USA,
+          Time of year: Fall,
+          Number of days at Location: 10,
 
 **Behavior**
 * Input: 

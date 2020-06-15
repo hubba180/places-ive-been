@@ -64,27 +64,26 @@ $(document).ready(function() {
   $("#rome").click(function() {
     event.preventDefault();
     $("#previousPlaceDisplay").show();
-    show(Rome);
+    showObject(Rome);
   });
 
   $("#hoodRiver").click(function() {
     event.preventDefault();
     $("#previousPlaceDisplay").show();
-    show(HoodRiver);
+    showObject(HoodRiver);
   });
 
   $("#mtEverest").click(function() {
     event.preventDefault();
     $("#previousPlaceDisplay").show();
-    show(MtEverest);
+    showObject(MtEverest);
   });
 
-  function show(object) {
+  function showObject(object) {
     $("#previousName").text(object.name);
-    $("#previousCountry").text(object.country);
-    $("#previousTimeOfYear").text(object.timeOfYear);
-    $("#previousDaysAt").text(object.daysAt);
-
+    $("#previousCountry").text("Country: " + object.country);
+    $("#previousTimeOfYear").text("Time of year: " + object.timeOfYear);
+    $("#previousDaysAt").text("Number of days at Location: " + object.daysAt);
   };
 
 });
