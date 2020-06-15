@@ -6,6 +6,22 @@ _This site was used to practive object oriented programming concepts by building
 
 ## Specifications
 
+**Behavior** Display places name.
+* Input: click
+* Output: display property
+
+**Behavior**
+* Input: 
+* Output:
+
+**Behavior**
+* Input: 
+* Output:
+
+**Behavior**
+* Input: 
+* Output:
+
 ## Setup/Installation Requirements
 
 #### Requirements
